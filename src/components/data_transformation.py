@@ -1,7 +1,4 @@
-# Decompiled with PyLingual (https://pylingual.io)
-# Internal filename: e:\mlprojectspw\diamondpriceprediction2\src\components\data_transformation.py
-# Bytecode version: 3.8.0rc1+ (3413)
-# Source timestamp: 2023-05-07 08:10:53 UTC (1683447053)
+
 
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
