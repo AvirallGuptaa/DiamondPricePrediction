@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction Result</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .result-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .result-container h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 36px;
+      font-weight: bold;
+      color: #7f5af0;
+      margin-bottom: 30px; /* Added margin for spacing */
+    }
+
+    .back-button {
+      padding: 12px 20px;
+      background-color: #7f5af0;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: #6931ca;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="result-container">
+    <h1>💎 Predicted Diamond Price</h1>
+    <div class="price">₹{{ final_result }}</div>
+    <a href="{{ url_for('predict_datapoint') }}" class="back-button">Predict Another</a>
+  </div>
+
+</body>
+</html>
